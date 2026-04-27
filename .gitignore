@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+.linear-tool/
+coverage/
+*.log
+.DS_Store

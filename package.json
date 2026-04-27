@@ -1,0 +1,40 @@
+{
+  "name": "linear-graphql-tool",
+  "version": "0.1.0",
+  "description": "Production-friendly Linear GraphQL CLI, HTTP API, webhook inbox, and agent tool surface.",
+  "type": "module",
+  "bin": {
+    "linear-tool": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    ".env.example"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cli": "tsx src/cli/index.ts",
+    "serve": "tsx src/cli/index.ts serve",
+    "webhook:serve": "tsx src/cli/index.ts webhook serve",
+    "config:check": "tsx src/cli/index.ts config check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "dotenv": "^17.2.3",
+    "pino": "^10.1.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
