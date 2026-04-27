@@ -110,7 +110,7 @@ The tool resolves human-friendly references internally:
 - issue identifiers: `IS-123`
 - team keys or names: `IS`, `Illegal Studio`
 - workflow state names: `Todo`, `In Progress`, `Done`
-- project names: `Apotecate`, `LazyAgent`
+- project names: `Elephc`, `LazyAgent`
 - assignee email/name or `me`
 - label names
 
